@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="01f-LU-zq0">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNj-45-HxI">
+                                <rect key="frame" x="160" y="608" width="54" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="点击">
+                                    <color key="titleColor" red="0.99989234833480212" green="1" blue="0.97151264999855591" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzK-ft-Hy3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="01f-LU-zq0" secondAttribute="bottom" id="L7i-JZ-0vZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="01f-LU-zq0" secondAttribute="trailing" constant="-20" id="Nxa-Jk-4fu"/>
+                            <constraint firstItem="01f-LU-zq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="PLq-mF-LiO"/>
+                            <constraint firstItem="YNj-45-HxI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="588" id="U57-ZM-la8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YNj-45-HxI" secondAttribute="trailing" constant="145" id="WuM-Hu-DeL"/>
+                            <constraint firstItem="YNj-45-HxI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="fL5-zp-2wu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNj-45-HxI" secondAttribute="bottom" constant="29" id="iss-bx-bLh"/>
+                            <constraint firstItem="01f-LU-zq0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="xfO-W8-o5u"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="242.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map.jpg" width="640" height="1136"/>
+    </resources>
+</document>
